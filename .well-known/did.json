@@ -1,0 +1,23 @@
+{
+    "@context": [
+        "https://www.w3.org/ns/did/v1",
+        "https://w3id.org/security/v2"
+    ],
+    "id": "did:web:PatStLouis.github.io",
+    "alsoKnownAs": [],
+    "assertionMethod": [
+        "did:web:PatStLouis.github.io#verkey"
+    ],
+    "verificationMethod": [
+        {
+            "id": "did:web:PatStLouis.github.io#verkey",
+            "type": "Ed25519VerificationKey2018",
+            "controller": "did:web:PatStLouis.github.io",
+            "publicKeyBase58": "Hq5oo9ruFwtsgUwmnuVeKg5uL1HtGT7K2PARh6mA9RnT"
+        }
+    ],
+    "authentication": [
+        "did:web:PatStLouis.github.io#verkey"
+    ],
+    "service": []
+}
