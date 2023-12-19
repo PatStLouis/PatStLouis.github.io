@@ -1,8 +1,7 @@
 {
     "@context": [
         "https://www.w3.org/ns/did/v1",
-        "https://w3id.org/security/v2",
-        "https://w3id.org/traceability/v1"
+        "https://w3id.org/security/v2"
     ],
     "id": "did:web:PatStLouis.github.io",
     "alsoKnownAs": [],
