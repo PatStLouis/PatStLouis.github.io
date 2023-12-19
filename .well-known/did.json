@@ -19,5 +19,11 @@
     "authentication": [
         "did:web:PatStLouis.github.io#verkey"
     ],
-    "service": []
+    "service": [
+        {
+            "id": "did:web:PatStLouis.github.io#traceability-api",
+            "type": ["TraceabilityAPI"],
+            "serviceEndpoint": "https://trace.opsec.id"
+          }
+    ]
 }
