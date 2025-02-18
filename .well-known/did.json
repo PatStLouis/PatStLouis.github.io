@@ -1,30 +1,28 @@
 {
     "@context": [
         "https://www.w3.org/ns/did/v1",
-        "https://w3id.org/security/v2",
-        "https://w3id.org/traceability/v1"
+        "https://w3id.org/security/multikey/v1"
     ],
-    "id": "did:web:PatStLouis.github.io",
-    "alsoKnownAs": [],
+    "id": "did:web:patstlouis.github.io",
+    "authentication": [
+        "did:web:patstlouis.github.io#key-01"
+    ],
     "assertionMethod": [
-        "did:web:PatStLouis.github.io#verkey"
+        "did:web:patstlouis.github.io#key-01"
     ],
     "verificationMethod": [
         {
-            "id": "did:web:PatStLouis.github.io#verkey",
-            "type": "Ed25519VerificationKey2018",
-            "controller": "did:web:PatStLouis.github.io",
-            "publicKeyBase58": "Hq5oo9ruFwtsgUwmnuVeKg5uL1HtGT7K2PARh6mA9RnT"
+            "id": "did:web:patstlouis.github.io#key-01",
+            "type": "Multikey",
+            "controller": "did:web:patstlouis.github.io",
+            "publicKeyMultibase": "z6MkqzneFHtWMxjwybgAUV3XnGp2WahqSCtkSRrXmJeiMdVD"
         }
-    ],
-    "authentication": [
-        "did:web:PatStLouis.github.io#verkey"
     ],
     "service": [
         {
-            "id": "did:web:PatStLouis.github.io#traceability-api",
-            "type": "TraceabilityAPI",
-            "serviceEndpoint": "https://trace.opsec.id"
+            "id": "did:web:patstlouis.github.io#gh",
+            "type": "LinkedDomains",
+            "serviceEndpoint": "https://github.com/PatStLouis"
           }
     ]
 }
